@@ -845,7 +845,1207 @@ const questions = [
         q: "Which 'Medication Safety' filter must be applied?",
         o: ["Notify the surgeon and anesthesia that Plavix was taken", "Wait for the surgery to start to see if they bleed", "Document 'on antiplatelets' and reassess the CBC", "Reassure the patient that the surgery is routine"],
         a: 0, r: "Filter: Hold unsafe procedure. Antiplatelets (Unsafe) increase surgical bleeding risk; must be reported (Safety)."
-    }  
+    },
+    {
+    v: "A patient with a suspected head injury has clear fluid leaking from the nose. The fluid creates a 'halo' sign on the gauze.",
+    q: "Which action avoids the 'Infection Trap' while prioritizing safety?",
+    o: ["Pack the nose tightly with sterile gauze to stop the leak", "Allow the fluid to drip onto a loose sterile pad and notify MD", "Suction the nasopharynx to clear the airway of fluid", "Document 'rhinorrhea' and reassess in 4 hours"],
+    a: 1, r: "Filter: Do not block CSF. Packing or suctioning (Unsafe) increases intracranial pressure and infection risk."
+},
+{
+    v: "A patient 4 hours post-thyroidectomy develops a frequent clearing of the throat and a 'tight' feeling in the neck.",
+    q: "What is the 'Airway Priority' action?",
+    o: ["Check the back of the neck for bleeding and call the surgeon", "Administer a PRN cough suppressant medication", "Explain that throat irritation is normal after intubation", "Document the findings and wait for morning rounds"],
+    a: 0, r: "Filter: Post-op bleeding. Neck tightness (Safety) indicates a hematoma compressing the airway."
+},
+{
+    v: "A nurse finds a patient's peripheral IV site is red, warm, and has a red streak moving up the arm.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Slow the IV rate and apply a cold compress", "Remove the IV catheter and restart at a new site", "Document 'phlebitis' and monitor every 4 hours", "Wait for the MD to see the streak before removing"],
+    a: 1, r: "Filter: Stop the trigger. Phlebitis (Safety) requires immediate removal to prevent thrombophlebitis."
+},
+{
+    v: "A patient with a history of seizures is having a tonic-clonic seizure in bed with the side rails down.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Place a padded tongue blade in the patient's mouth", "Turn the patient to the side and protect the head", "Restrain the patient's arms to prevent hitting the rails", "Document the start time and wait for it to end"],
+    a: 1, r: "Filter: Physical safety. Side-lying (Safety) prevents aspiration; mouth objects (Unsafe) cause injury."
+},
+{
+    v: "A nurse is preparing to hang a bag of TPN and notices the solution is cloudy with visible particles.",
+    q: "Which 'Medication Safety' filter must be applied?",
+    o: ["Shake the bag until the particles disappear", "Return the bag to the pharmacy and get a replacement", "Filter the solution using a standard IV filter", "Document the appearance and hang the bag anyway"],
+    a: 1, r: "Filter: Hold unsafe meds. Precipitation (Unsafe) can cause an embolism; never infuse cloudy TPN."
+},
+{
+    v: "A 2-year-old child is brought to the ER with a high fever, drooling, and sitting in a 'tripod' position.",
+    q: "To avoid a fatal 'Airway Trap', the nurse must NOT:",
+    o: ["Apply humidified oxygen via blow-by", "Examine the throat with a tongue depressor", "Keep the child on the parent's lap", "Prepare for emergency intubation"],
+    a: 1, r: "Filter: Do not trigger laryngospasm. Tongue depressors (Unsafe) in epiglottitis can cause total airway closure."
+},
+{
+    v: "A patient on Magnesium Sulfate for preeclampsia has a respiratory rate of 8 breaths/minute and absent DTRs.",
+    q: "Which 'First Safe Step' applies?",
+    o: ["Stop the Magnesium infusion and prepare Calcium Gluconate", "Document the 'bradypnea' and reassess in 15 minutes", "Increase the IV fluid rate to flush the medication", "Explain to the family that the patient is sleeping deeply"],
+    a: 0, r: "Filter: Antidote/Hold. Mg Toxicity (Safety) requires stopping the drug and giving the antagonist."
+},
+{
+    v: "A patient with a new cast on the leg reports extreme pain that is not relieved by Morphine.",
+    q: "Which 'Diagnosis Trap' must be avoided?",
+    o: ["Document 'drug-seeking behavior' and deny more meds", "Assess for Compartment Syndrome and notify the MD", "Wait for the cast to dry completely before reassessing", "Explain that pain is expected for the first 24 hours"],
+    a: 1, r: "Filter: Pain out of proportion. Unrelieved pain (Safety) is the first sign of Compartment Syndrome."
+},
+{
+    v: "During a blood transfusion, the patient develops lower back pain and hematuria.",
+    q: "What is the 'Action > Documentation' priority?",
+    o: ["Stop the transfusion and disconnect the tubing", "Slow the rate and monitor the vital signs", "Document the 'reaction' and call the blood bank", "Wait for the MD to confirm an allergic response"],
+    a: 0, r: "Filter: Stop the trigger. Hemolytic reaction (Safety) requires immediate cessation of the blood."
+},
+{
+    v: "A nurse is caring for a patient with a radioactive implant who starts to bleed from the surgical site.",
+    q: "Which 'Safety > Protocol' filter applies?",
+    o: ["Provide direct pressure to the wound with long forceps", "Pick up the radioactive source with bare hands to move it", "Document the 'hemorrhage' and stay at the bedside", "Wait for the radiation officer before touching the patient"],
+    a: 0, r: "Filter: Distance/Time. Use tools (Safety) to minimize radiation exposure while treating the bleed."
+},
+{
+    v: "A patient with a tracheostomy is found with the tube partially dislodged after a coughing fit.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Use a hemostat to keep the stoma open and call for help", "Document 'partial dislodgement' and wait for the RT", "Push the tube back in forcefully with a lubricant", "Explain the emergency to the patient to keep them calm"],
+    a: 0, r: "Filter: Maintain airway. Keeping the stoma open (Safety) prevents total airway loss."
+},
+{
+    v: "A nurse observes an elderly patient trying to climb over the side rails of the bed.",
+    q: "Which 'Safety > Restraint' filter is priority?",
+    o: ["Apply bilateral wrist restraints immediately", "Lower the rails and provide a bedside commode", "Document 'agitated behavior' and call security", "Wait for the family to arrive to sit with the patient"],
+    a: 1, r: "Filter: Least restrictive safe action. Climbing rails (Unsafe) leads to falls; lower the barrier (Safety)."
+},
+{
+    v: "A patient with a suspected MI is given Nitroglycerin sublingually. The BP drops from 130/80 to 90/60.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Document 'hypotension' and wait for the next dose", "Position the patient flat with legs elevated", "Wait for the ECG to show changes before acting", "Administer the second dose of Nitroglycerin"],
+    a: 1, r: "Filter: Position for perfusion. Elevating legs (Safety) helps BP; more Nitro (Unsafe) worsens it."
+},
+{
+    v: "A patient with a colonoscopy scheduled has been taking Aspirin daily for heart health.",
+    q: "Which 'Pre-op Safety' filter applies?",
+    o: ["Ensure the Aspirin was stopped 5-7 days prior to surgery", "Wait for the surgeon to see if the patient bleeds first", "Document 'Aspirin use' and proceed as planned", "Explain that Aspirin does not affect surgical bleeding"],
+    a: 0, r: "Filter: Prevent hemorrhage. Aspirin (Unsafe) increases bleeding risk; must be held (Safety)."
+},
+{
+    v: "A nurse finds a psychiatric patient has hidden a metal spoon and sharpened the handle into a point.",
+    q: "Which 'Safety > Politeness' filter applies?",
+    o: ["Ask the patient why they felt the need to make a weapon", "Confiscate the object immediately and initiate a room search", "Wait for the psychiatrist to discuss this in therapy", "Document 'potential for violence' in the shift report"],
+    a: 1, r: "Filter: Remove hazard immediately. Sharp objects (Unsafe) in a psych unit are an immediate threat."
+},
+{
+    v: "A patient with a central line develops sudden shortness of breath and a 'mill-wheel' heart murmur.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Place the patient in left-side Trendelenburg position", "Wait for a portable X-ray to confirm an air embolus", "Document 'murmur detected' and monitor O2 saturation", "Increase the IV rate to flush the air through"],
+    a: 0, r: "Filter: Air embolus protocol. Positioning (Safety) prevents air from blocking the heart's exit."
+},
+{
+    v: "A nurse is giving a medication that requires an apical pulse check. The pulse is 52 bpm.",
+    q: "Which 'Authority Trap' must be avoided?",
+    o: ["Give the medication and document 'pulse is low'", "Hold the medication and notify the physician", "Wait for the charge nurse to re-take the pulse", "Reassure the patient that a slow heart is healthy"],
+    a: 1, r: "Filter: Hold unsafe meds. Standard safety (Safety) for Digoxin/Beta-blockers is to hold if < 60."
+},
+{
+    v: "A neonate with jaundice is under phototherapy. The nurse finds the eye shields have slipped off.",
+    q: "Which 'Safety > Technology' filter applies?",
+    o: ["Replace the eye shields immediately and secure them", "Wait for the next feeding to fix the eye shields", "Document 'eyes exposed' and continue the therapy", "Turn off the lights and wait for the doctor's assessment"],
+    a: 0, r: "Filter: Prevent injury. Retinal damage (Unsafe) occurs quickly; replace protection (Safety) now."
+},
+{
+    v: "A patient with a chest tube has a sudden cessation of drainage and the 'tidaling' in the chamber stops.",
+    q: "Which 'Respiratory' filter avoids 'Reassessment Loops'?",
+    o: ["Check the tubing for kinks or dependent loops", "Wait for the MD to order a chest X-ray", "Document 'no tidaling' and reassess in 2 hours", "Milk the chest tube vigorously to restart flow"],
+    a: 0, r: "Filter: Simplest safe action. Checking for kinks (Safety) is priority; milking (Unsafe) is often restricted."
+},
+{
+    v: "A patient with a CVC line change develops a sudden cough and gasping during the procedure.",
+    q: "Which 'Action > Documentation' rule is priority?",
+    o: ["Clamp the catheter and turn the patient to the left side", "Document the 'respiratory distress' and call the RT", "Wait for the sterile dressing to be completed first", "Increase the oxygen to 10L via simple mask"],
+    a: 0, r: "Filter: First safe step. Clamping/Positioning (Safety) addresses the air embolus immediately."
+},
+{
+    v: "A patient with chronic COPD is receiving 6L of oxygen via nasal cannula and has a CO2 of 65.",
+    q: "Which 'Medication/Safety' filter applies?",
+    o: ["Reduce the oxygen to 2L to maintain the respiratory drive", "Wait for the patient to become drowsy before acting", "Document 'hypercapnia' and check the O2 saturation", "Increase the oxygen to 10L to improve the CO2 level"],
+    a: 0, r: "Filter: Oxygen toxicity. High O2 (Unsafe) in COPD can stop the breathing drive; reduce flow (Safety)."
+},
+{
+    v: "A nurse is about to administer blood but the patient's name on the bag has one letter different from the ID band.",
+    q: "Which 'Ethical/Safety' filter applies?",
+    o: ["Administer the blood since the medical record number matches", "Send the blood back to the lab and do not administer", "Wait for the supervisor to sign off on the discrepancy", "Document 'minor clerical error' and monitor for reaction"],
+    a: 1, r: "Filter: Absolute match. Any discrepancy (Unsafe) in blood labeling is a reason for rejection (Safety)."
+},
+{
+    v: "A patient with a pelvic fracture has not moved their legs for 24 hours and reports sudden chest pain.",
+    q: "Which 'Diagnosis Trap' should be anticipated?",
+    o: ["Document 'anxiety' and offer a distraction", "Assess for Pulmonary Embolism and apply oxygen", "Wait for the pain to subside before performing an ECG", "Explain that chest pain is common after trauma"],
+    a: 1, r: "Filter: High risk + Symptom = Act. Pelvic fractures (Safety) carry a very high risk of PE."
+},
+{
+    v: "A patient with an AV fistula for dialysis is found sleeping with their head resting on the fistula arm.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Gently move the patient's head and assess for a thrill", "Wait for the patient to wake up naturally", "Document 'improper positioning' in the chart", "Reassure the patient that the arm is strong enough"],
+    a: 0, r: "Filter: Protect the lifeline. Pressure (Unsafe) causes clotting; check patency (Safety) immediately."
+},
+{
+    v: "A nurse finds a medication vial in the fridge that expired yesterday.",
+    q: "Which 'Medication Safety' filter applies?",
+    o: ["Discard the vial and order a new one from pharmacy", "Use it anyway as medications are stable for 30 days more", "Wait for the pharmacist to decide if it's okay", "Document 'medication waste' and use half the dose"],
+    a: 0, r: "Filter: Hold unsafe meds. Expired drugs (Unsafe) are a hard stop (Safety)."
+},
+{
+    v: "A patient with a history of falls is trying to get out of bed to go to the bathroom alone.",
+    q: "Which 'Action > Explanation' priority applies?",
+    o: ["Assist the patient to the bathroom or use a commode", "Explain the hospital's fall policy while they stand up", "Wait for the physical therapist to provide a walker", "Document 'non-compliant with safety' in the report"],
+    a: 0, r: "Filter: Physical safety first. Assistive action (Safety) prevents the fall; documentation (Delay) does not."
+},
+{
+    v: "A patient 1-hour post-op from a carotid endarterectomy has a BP of 190/100.",
+    q: "Which 'Neurological' filter is the priority?",
+    o: ["Report the BP and prepare for IV antihypertensives", "Wait for the BP to stabilize as the anesthesia wears off", "Document 'hypertension' and reassess in 1 hour", "Explain the importance of stress reduction to the patient"],
+    a: 0, r: "Filter: Prevent catastrophe. Post-op hypertension (Safety) can cause a stroke or hematoma at the site."
+},
+{
+    v: "A nurse hears a 'hissing' sound coming from the oxygen flowmeter on the wall.",
+    q: "Which 'Safety > Technology' filter applies?",
+    o: ["Switch the patient to a portable tank and tag the wall unit", "Wait for the maintenance team to finish their rounds", "Document 'equipment failure' and stay with the patient", "Try to tighten the flowmeter with a wrench"],
+    a: 0, r: "Filter: Redundancy. Switch to a safe source (Safety) before dealing with the faulty one (Delay)."
+},
+{
+    v: "A patient with a systemic infection (Sepsis) has a blood pressure of 85/40 and a lactate of 5.0.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Start a rapid bolus of 30mL/kg Normal Saline", "Wait for the blood cultures to come back before giving fluids", "Document 'septic shock' and monitor hourly output", "Explain the risk of organ failure to the family"],
+    a: 0, r: "Filter: Fluid resuscitation. Early volume (Safety) is the gold standard for sepsis survival."
+},
+{
+    v: "A patient with a chest tube has 300mL of bright red drainage in the first hour post-insertion.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Notify the surgeon immediately of excessive drainage", "Wait and see if the drainage decreases in the second hour", "Document 'expected post-op bleeding' and check vitals", "Explain to the patient that the lung is clearing"],
+    a: 0, r: "Filter: Quantitative safety. Drainage > 100-200mL/hr (Safety) is a surgical emergency."
+},
+{
+    v: "A patient with a history of heart failure has gained 3kg of weight in 24 hours.",
+    q: "Which 'Fluid Balance' filter applies?",
+    o: ["Assess for lung crackles and notify the MD for diuretics", "Wait for the morning lab results for sodium", "Document 'weight gain' and reassess tomorrow", "Explain the fluid restriction diet to the patient"],
+    a: 0, r: "Filter: Early warning. Rapid weight gain (Safety) indicates fluid overload; act before distress."
+},
+{
+    v: "A patient with a PEG tube has a residual volume of 600mL before the next feeding.",
+    q: "Which 'GI Care' filter applies?",
+    o: ["Hold the feeding and notify the physician", "Wait for 30 minutes and give the feeding anyway", "Document 'high residual' and increase the feeding rate", "Explain that the stomach is full to the patient"],
+    a: 0, r: "Filter: Hold unsafe procedure. High residual (Safety) carries a massive risk of aspiration."
+},
+{
+    v: "A nurse finds a student nurse starting an IV on a patient without wearing gloves.",
+    q: "Which 'Ethical/Safety' filter applies?",
+    o: ["Stop the student and provide a pair of gloves immediately", "Wait until the procedure is over to teach the student", "Document 'OSHA violation' in the student's evaluation", "Reassure the student that the patient has 'clean' blood"],
+    a: 0, r: "Filter: Infection control. Stop the act (Safety) to prevent exposure for both parties."
+},
+{
+    v: "A patient with a deep vein thrombosis (DVT) starts to massage their calf because it 'hurts'.",
+    q: "What is the 'Action > Explanation' priority?",
+    o: ["Stop the patient from massaging the leg immediately", "Explain the risk of PE while they continue massaging", "Wait for the doctor to order a warm compress", "Document 'patient discomfort' in the chart"],
+    a: 0, r: "Filter: Prevent embolus. Massage (Unsafe) can dislodge the clot; stop immediately (Safety)."
+},
+{
+    v: "A patient with an unknown allergy is about to receive an IV contrast dye for a CT scan.",
+    q: "Which 'Medication Safety' filter is priority?",
+    o: ["Ask about allergies to shellfish or iodine specifically", "Wait for the CT tech to ask the questions", "Document 'allergy status unknown' and give the dye", "Explain that the dye might cause a warm feeling"],
+    a: 0, r: "Filter: Screening. Allergy check (Safety) must occur before injecting high-risk dyes (Unsafe)."
+},
+{
+    v: "A patient with a low platelet count (20,000) is brushing their teeth with a hard-bristle brush.",
+    q: "Which 'Safety > Protocol' filter applies?",
+    o: ["Provide a soft swab or soft brush and explain the risk", "Wait for the gums to bleed before intervening", "Document 'risk for bleeding' and watch the patient", "Force the patient to stop and take away the brush"],
+    a: 0, r: "Filter: Prevent hemorrhage. Hard bristles (Unsafe) cause bleeding in thrombocytopenia (Safety)."
+},
+{
+    v: "A nurse hears a patient yell 'Get out of here!' and the sound of a chair being thrown.",
+    q: "Which 'Safety before Protocol' filter applies?",
+    o: ["Call for help and do not enter the room alone", "Enter the room immediately to calm the patient", "Wait for the patient to stop yelling before calling", "Document 'agitation' and check the chart for meds"],
+    a: 0, r: "Filter: Staff/Patient safety. Violence (Unsafe) requires team support before intervention."
+},
+{
+    v: "A patient with a fever of 40C is shivering violently under three blankets.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Remove the blankets and provide cooling measures", "Wait for the blankets to warm the patient up", "Document 'rigors' and check the temperature again", "Explain that shivering is the body's way of fighting"],
+    a: 0, r: "Filter: Thermoregulation. Blankets (Unsafe) during a fever spike trap heat; cool the patient (Safety)."
+},
+{
+    v: "A patient on a heparin drip is scheduled for an urgent lumbar puncture.",
+    q: "Which 'Medication Safety' filter must be applied?",
+    o: ["Stop the heparin as per protocol before the procedure", "Wait for the neurologist to decide if it's safe", "Document 'heparin infusion' and proceed with the LP", "Increase the heparin dose to prevent clots during the LP"],
+    a: 0, r: "Filter: Hold unsafe meds. Heparin + LP (Unsafe) = spinal hematoma risk; must hold (Safety)."
+},
+{
+    v: "A nurse finds a toddler has swallowed an unknown quantity of a cleaning liquid.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Assess the airway and call Poison Control", "Induce vomiting with syrup of ipecac", "Wait for the parents to identify the liquid", "Document 'accidental ingestion' in the triage notes"],
+    a: 0, r: "Filter: Airway/Expert advice. Airway check (Safety) and Poison Control (Safety) are the priorities; inducing vomit (Unsafe) is often contraindicated."
+},
+    {
+    v: "A patient with a suspected head injury has clear fluid leaking from the nose. The fluid creates a 'halo' sign on the gauze.",
+    q: "Which action avoids the 'Infection Trap' while prioritizing safety?",
+    o: ["Pack the nose tightly with sterile gauze to stop the leak", "Allow the fluid to drip onto a loose sterile pad and notify MD", "Suction the nasopharynx to clear the airway of fluid", "Document 'rhinorrhea' and reassess in 4 hours"],
+    a: 1, r: "Filter: Do not block CSF. Packing or suctioning (Unsafe) increases intracranial pressure and infection risk."
+},
+{
+    v: "A patient 4 hours post-thyroidectomy develops a frequent clearing of the throat and a 'tight' feeling in the neck.",
+    q: "What is the 'Airway Priority' action?",
+    o: ["Check the back of the neck for bleeding and call the surgeon", "Administer a PRN cough suppressant medication", "Explain that throat irritation is normal after intubation", "Document the findings and wait for morning rounds"],
+    a: 0, r: "Filter: Post-op bleeding. Neck tightness (Safety) indicates a hematoma compressing the airway."
+},
+{
+    v: "A nurse finds a patient's peripheral IV site is red, warm, and has a red streak moving up the arm.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Slow the IV rate and apply a cold compress", "Remove the IV catheter and restart at a new site", "Document 'phlebitis' and monitor every 4 hours", "Wait for the MD to see the streak before removing"],
+    a: 1, r: "Filter: Stop the trigger. Phlebitis (Safety) requires immediate removal to prevent thrombophlebitis."
+},
+{
+    v: "A patient with a history of seizures is having a tonic-clonic seizure in bed with the side rails down.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Place a padded tongue blade in the patient's mouth", "Turn the patient to the side and protect the head", "Restrain the patient's arms to prevent hitting the rails", "Document the start time and wait for it to end"],
+    a: 1, r: "Filter: Physical safety. Side-lying (Safety) prevents aspiration; mouth objects (Unsafe) cause injury."
+},
+{
+    v: "A nurse is preparing to hang a bag of TPN and notices the solution is cloudy with visible particles.",
+    q: "Which 'Medication Safety' filter must be applied?",
+    o: ["Shake the bag until the particles disappear", "Return the bag to the pharmacy and get a replacement", "Filter the solution using a standard IV filter", "Document the appearance and hang the bag anyway"],
+    a: 1, r: "Filter: Hold unsafe meds. Precipitation (Unsafe) can cause an embolism; never infuse cloudy TPN."
+},
+{
+    v: "A 2-year-old child is brought to the ER with a high fever, drooling, and sitting in a 'tripod' position.",
+    q: "To avoid a fatal 'Airway Trap', the nurse must NOT:",
+    o: ["Apply humidified oxygen via blow-by", "Examine the throat with a tongue depressor", "Keep the child on the parent's lap", "Prepare for emergency intubation"],
+    a: 1, r: "Filter: Do not trigger laryngospasm. Tongue depressors (Unsafe) in epiglottitis can cause total airway closure."
+},
+{
+    v: "A patient on Magnesium Sulfate for preeclampsia has a respiratory rate of 8 breaths/minute and absent DTRs.",
+    q: "Which 'First Safe Step' applies?",
+    o: ["Stop the Magnesium infusion and prepare Calcium Gluconate", "Document the 'bradypnea' and reassess in 15 minutes", "Increase the IV fluid rate to flush the medication", "Explain to the family that the patient is sleeping deeply"],
+    a: 0, r: "Filter: Antidote/Hold. Mg Toxicity (Safety) requires stopping the drug and giving the antagonist."
+},
+{
+    v: "A patient with a new cast on the leg reports extreme pain that is not relieved by Morphine.",
+    q: "Which 'Diagnosis Trap' must be avoided?",
+    o: ["Document 'drug-seeking behavior' and deny more meds", "Assess for Compartment Syndrome and notify the MD", "Wait for the cast to dry completely before reassessing", "Explain that pain is expected for the first 24 hours"],
+    a: 1, r: "Filter: Pain out of proportion. Unrelieved pain (Safety) is the first sign of Compartment Syndrome."
+},
+{
+    v: "During a blood transfusion, the patient develops lower back pain and hematuria.",
+    q: "What is the 'Action > Documentation' priority?",
+    o: ["Stop the transfusion and disconnect the tubing", "Slow the rate and monitor the vital signs", "Document the 'reaction' and call the blood bank", "Wait for the MD to confirm an allergic response"],
+    a: 0, r: "Filter: Stop the trigger. Hemolytic reaction (Safety) requires immediate cessation of the blood."
+},
+{
+    v: "A nurse is caring for a patient with a radioactive implant who starts to bleed from the surgical site.",
+    q: "Which 'Safety > Protocol' filter applies?",
+    o: ["Provide direct pressure to the wound with long forceps", "Pick up the radioactive source with bare hands to move it", "Document the 'hemorrhage' and stay at the bedside", "Wait for the radiation officer before touching the patient"],
+    a: 0, r: "Filter: Distance/Time. Use tools (Safety) to minimize radiation exposure while treating the bleed."
+},
+{
+    v: "A patient with a tracheostomy is found with the tube partially dislodged after a coughing fit.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Use a hemostat to keep the stoma open and call for help", "Document 'partial dislodgement' and wait for the RT", "Push the tube back in forcefully with a lubricant", "Explain the emergency to the patient to keep them calm"],
+    a: 0, r: "Filter: Maintain airway. Keeping the stoma open (Safety) prevents total airway loss."
+},
+{
+    v: "A nurse observes an elderly patient trying to climb over the side rails of the bed.",
+    q: "Which 'Safety > Restraint' filter is priority?",
+    o: ["Apply bilateral wrist restraints immediately", "Lower the rails and provide a bedside commode", "Document 'agitated behavior' and call security", "Wait for the family to arrive to sit with the patient"],
+    a: 1, r: "Filter: Least restrictive safe action. Climbing rails (Unsafe) leads to falls; lower the barrier (Safety)."
+},
+{
+    v: "A patient with a suspected MI is given Nitroglycerin sublingually. The BP drops from 130/80 to 90/60.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Document 'hypotension' and wait for the next dose", "Position the patient flat with legs elevated", "Wait for the ECG to show changes before acting", "Administer the second dose of Nitroglycerin"],
+    a: 1, r: "Filter: Position for perfusion. Elevating legs (Safety) helps BP; more Nitro (Unsafe) worsens it."
+},
+{
+    v: "A patient with a colonoscopy scheduled has been taking Aspirin daily for heart health.",
+    q: "Which 'Pre-op Safety' filter applies?",
+    o: ["Ensure the Aspirin was stopped 5-7 days prior to surgery", "Wait for the surgeon to see if the patient bleeds first", "Document 'Aspirin use' and proceed as planned", "Explain that Aspirin does not affect surgical bleeding"],
+    a: 0, r: "Filter: Prevent hemorrhage. Aspirin (Unsafe) increases bleeding risk; must be held (Safety)."
+},
+{
+    v: "A nurse finds a psychiatric patient has hidden a metal spoon and sharpened the handle into a point.",
+    q: "Which 'Safety > Politeness' filter applies?",
+    o: ["Ask the patient why they felt the need to make a weapon", "Confiscate the object immediately and initiate a room search", "Wait for the psychiatrist to discuss this in therapy", "Document 'potential for violence' in the shift report"],
+    a: 1, r: "Filter: Remove hazard immediately. Sharp objects (Unsafe) in a psych unit are an immediate threat."
+},
+{
+    v: "A patient with a central line develops sudden shortness of breath and a 'mill-wheel' heart murmur.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Place the patient in left-side Trendelenburg position", "Wait for a portable X-ray to confirm an air embolus", "Document 'murmur detected' and monitor O2 saturation", "Increase the IV rate to flush the air through"],
+    a: 0, r: "Filter: Air embolus protocol. Positioning (Safety) prevents air from blocking the heart's exit."
+},
+{
+    v: "A nurse is giving a medication that requires an apical pulse check. The pulse is 52 bpm.",
+    q: "Which 'Authority Trap' must be avoided?",
+    o: ["Give the medication and document 'pulse is low'", "Hold the medication and notify the physician", "Wait for the charge nurse to re-take the pulse", "Reassure the patient that a slow heart is healthy"],
+    a: 1, r: "Filter: Hold unsafe meds. Standard safety (Safety) for Digoxin/Beta-blockers is to hold if < 60."
+},
+{
+    v: "A neonate with jaundice is under phototherapy. The nurse finds the eye shields have slipped off.",
+    q: "Which 'Safety > Technology' filter applies?",
+    o: ["Replace the eye shields immediately and secure them", "Wait for the next feeding to fix the eye shields", "Document 'eyes exposed' and continue the therapy", "Turn off the lights and wait for the doctor's assessment"],
+    a: 0, r: "Filter: Prevent injury. Retinal damage (Unsafe) occurs quickly; replace protection (Safety) now."
+},
+{
+    v: "A patient with a chest tube has a sudden cessation of drainage and the 'tidaling' in the chamber stops.",
+    q: "Which 'Respiratory' filter avoids 'Reassessment Loops'?",
+    o: ["Check the tubing for kinks or dependent loops", "Wait for the MD to order a chest X-ray", "Document 'no tidaling' and reassess in 2 hours", "Milk the chest tube vigorously to restart flow"],
+    a: 0, r: "Filter: Simplest safe action. Checking for kinks (Safety) is priority; milking (Unsafe) is often restricted."
+},
+{
+    v: "A patient with a CVC line change develops a sudden cough and gasping during the procedure.",
+    q: "Which 'Action > Documentation' rule is priority?",
+    o: ["Clamp the catheter and turn the patient to the left side", "Document the 'respiratory distress' and call the RT", "Wait for the sterile dressing to be completed first", "Increase the oxygen to 10L via simple mask"],
+    a: 0, r: "Filter: First safe step. Clamping/Positioning (Safety) addresses the air embolus immediately."
+},
+{
+    v: "A patient with chronic COPD is receiving 6L of oxygen via nasal cannula and has a CO2 of 65.",
+    q: "Which 'Medication/Safety' filter applies?",
+    o: ["Reduce the oxygen to 2L to maintain the respiratory drive", "Wait for the patient to become drowsy before acting", "Document 'hypercapnia' and check the O2 saturation", "Increase the oxygen to 10L to improve the CO2 level"],
+    a: 0, r: "Filter: Oxygen toxicity. High O2 (Unsafe) in COPD can stop the breathing drive; reduce flow (Safety)."
+},
+{
+    v: "A nurse is about to administer blood but the patient's name on the bag has one letter different from the ID band.",
+    q: "Which 'Ethical/Safety' filter applies?",
+    o: ["Administer the blood since the medical record number matches", "Send the blood back to the lab and do not administer", "Wait for the supervisor to sign off on the discrepancy", "Document 'minor clerical error' and monitor for reaction"],
+    a: 1, r: "Filter: Absolute match. Any discrepancy (Unsafe) in blood labeling is a reason for rejection (Safety)."
+},
+{
+    v: "A patient with a pelvic fracture has not moved their legs for 24 hours and reports sudden chest pain.",
+    q: "Which 'Diagnosis Trap' should be anticipated?",
+    o: ["Document 'anxiety' and offer a distraction", "Assess for Pulmonary Embolism and apply oxygen", "Wait for the pain to subside before performing an ECG", "Explain that chest pain is common after trauma"],
+    a: 1, r: "Filter: High risk + Symptom = Act. Pelvic fractures (Safety) carry a very high risk of PE."
+},
+{
+    v: "A patient with an AV fistula for dialysis is found sleeping with their head resting on the fistula arm.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Gently move the patient's head and assess for a thrill", "Wait for the patient to wake up naturally", "Document 'improper positioning' in the chart", "Reassure the patient that the arm is strong enough"],
+    a: 0, r: "Filter: Protect the lifeline. Pressure (Unsafe) causes clotting; check patency (Safety) immediately."
+},
+{
+    v: "A nurse finds a medication vial in the fridge that expired yesterday.",
+    q: "Which 'Medication Safety' filter applies?",
+    o: ["Discard the vial and order a new one from pharmacy", "Use it anyway as medications are stable for 30 days more", "Wait for the pharmacist to decide if it's okay", "Document 'medication waste' and use half the dose"],
+    a: 0, r: "Filter: Hold unsafe meds. Expired drugs (Unsafe) are a hard stop (Safety)."
+},
+{
+    v: "A patient with a history of falls is trying to get out of bed to go to the bathroom alone.",
+    q: "Which 'Action > Explanation' priority applies?",
+    o: ["Assist the patient to the bathroom or use a commode", "Explain the hospital's fall policy while they stand up", "Wait for the physical therapist to provide a walker", "Document 'non-compliant with safety' in the report"],
+    a: 0, r: "Filter: Physical safety first. Assistive action (Safety) prevents the fall; documentation (Delay) does not."
+},
+{
+    v: "A patient 1-hour post-op from a carotid endarterectomy has a BP of 190/100.",
+    q: "Which 'Neurological' filter is the priority?",
+    o: ["Report the BP and prepare for IV antihypertensives", "Wait for the BP to stabilize as the anesthesia wears off", "Document 'hypertension' and reassess in 1 hour", "Explain the importance of stress reduction to the patient"],
+    a: 0, r: "Filter: Prevent catastrophe. Post-op hypertension (Safety) can cause a stroke or hematoma at the site."
+},
+{
+    v: "A nurse hears a 'hissing' sound coming from the oxygen flowmeter on the wall.",
+    q: "Which 'Safety > Technology' filter applies?",
+    o: ["Switch the patient to a portable tank and tag the wall unit", "Wait for the maintenance team to finish their rounds", "Document 'equipment failure' and stay with the patient", "Try to tighten the flowmeter with a wrench"],
+    a: 0, r: "Filter: Redundancy. Switch to a safe source (Safety) before dealing with the faulty one (Delay)."
+},
+{
+    v: "A patient with a systemic infection (Sepsis) has a blood pressure of 85/40 and a lactate of 5.0.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Start a rapid bolus of 30mL/kg Normal Saline", "Wait for the blood cultures to come back before giving fluids", "Document 'septic shock' and monitor hourly output", "Explain the risk of organ failure to the family"],
+    a: 0, r: "Filter: Fluid resuscitation. Early volume (Safety) is the gold standard for sepsis survival."
+},
+{
+    v: "A patient with a chest tube has 300mL of bright red drainage in the first hour post-insertion.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Notify the surgeon immediately of excessive drainage", "Wait and see if the drainage decreases in the second hour", "Document 'expected post-op bleeding' and check vitals", "Explain to the patient that the lung is clearing"],
+    a: 0, r: "Filter: Quantitative safety. Drainage > 100-200mL/hr (Safety) is a surgical emergency."
+},
+{
+    v: "A patient with a history of heart failure has gained 3kg of weight in 24 hours.",
+    q: "Which 'Fluid Balance' filter applies?",
+    o: ["Assess for lung crackles and notify the MD for diuretics", "Wait for the morning lab results for sodium", "Document 'weight gain' and reassess tomorrow", "Explain the fluid restriction diet to the patient"],
+    a: 0, r: "Filter: Early warning. Rapid weight gain (Safety) indicates fluid overload; act before distress."
+},
+{
+    v: "A patient with a PEG tube has a residual volume of 600mL before the next feeding.",
+    q: "Which 'GI Care' filter applies?",
+    o: ["Hold the feeding and notify the physician", "Wait for 30 minutes and give the feeding anyway", "Document 'high residual' and increase the feeding rate", "Explain that the stomach is full to the patient"],
+    a: 0, r: "Filter: Hold unsafe procedure. High residual (Safety) carries a massive risk of aspiration."
+},
+{
+    v: "A nurse finds a student nurse starting an IV on a patient without wearing gloves.",
+    q: "Which 'Ethical/Safety' filter applies?",
+    o: ["Stop the student and provide a pair of gloves immediately", "Wait until the procedure is over to teach the student", "Document 'OSHA violation' in the student's evaluation", "Reassure the student that the patient has 'clean' blood"],
+    a: 0, r: "Filter: Infection control. Stop the act (Safety) to prevent exposure for both parties."
+},
+{
+    v: "A patient with a deep vein thrombosis (DVT) starts to massage their calf because it 'hurts'.",
+    q: "What is the 'Action > Explanation' priority?",
+    o: ["Stop the patient from massaging the leg immediately", "Explain the risk of PE while they continue massaging", "Wait for the doctor to order a warm compress", "Document 'patient discomfort' in the chart"],
+    a: 0, r: "Filter: Prevent embolus. Massage (Unsafe) can dislodge the clot; stop immediately (Safety)."
+},
+{
+    v: "A patient with an unknown allergy is about to receive an IV contrast dye for a CT scan.",
+    q: "Which 'Medication Safety' filter is priority?",
+    o: ["Ask about allergies to shellfish or iodine specifically", "Wait for the CT tech to ask the questions", "Document 'allergy status unknown' and give the dye", "Explain that the dye might cause a warm feeling"],
+    a: 0, r: "Filter: Screening. Allergy check (Safety) must occur before injecting high-risk dyes (Unsafe)."
+},
+{
+    v: "A patient with a low platelet count (20,000) is brushing their teeth with a hard-bristle brush.",
+    q: "Which 'Safety > Protocol' filter applies?",
+    o: ["Provide a soft swab or soft brush and explain the risk", "Wait for the gums to bleed before intervening", "Document 'risk for bleeding' and watch the patient", "Force the patient to stop and take away the brush"],
+    a: 0, r: "Filter: Prevent hemorrhage. Hard bristles (Unsafe) cause bleeding in thrombocytopenia (Safety)."
+},
+{
+    v: "A nurse hears a patient yell 'Get out of here!' and the sound of a chair being thrown.",
+    q: "Which 'Safety before Protocol' filter applies?",
+    o: ["Call for help and do not enter the room alone", "Enter the room immediately to calm the patient", "Wait for the patient to stop yelling before calling", "Document 'agitation' and check the chart for meds"],
+    a: 0, r: "Filter: Staff/Patient safety. Violence (Unsafe) requires team support before intervention."
+},
+{
+    v: "A patient with a fever of 40C is shivering violently under three blankets.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Remove the blankets and provide cooling measures", "Wait for the blankets to warm the patient up", "Document 'rigors' and check the temperature again", "Explain that shivering is the body's way of fighting"],
+    a: 0, r: "Filter: Thermoregulation. Blankets (Unsafe) during a fever spike trap heat; cool the patient (Safety)."
+},
+{
+    v: "A patient on a heparin drip is scheduled for an urgent lumbar puncture.",
+    q: "Which 'Medication Safety' filter must be applied?",
+    o: ["Stop the heparin as per protocol before the procedure", "Wait for the neurologist to decide if it's safe", "Document 'heparin infusion' and proceed with the LP", "Increase the heparin dose to prevent clots during the LP"],
+    a: 0, r: "Filter: Hold unsafe meds. Heparin + LP (Unsafe) = spinal hematoma risk; must hold (Safety)."
+},
+{
+    v: "A nurse finds a toddler has swallowed an unknown quantity of a cleaning liquid.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Assess the airway and call Poison Control", "Induce vomiting with syrup of ipecac", "Wait for the parents to identify the liquid", "Document 'accidental ingestion' in the triage notes"],
+    a: 0, r: "Filter: Airway/Expert advice. Airway check (Safety) and Poison Control (Safety) are the priorities; inducing vomit (Unsafe) is often contraindicated."
+},
+    {
+    v: "A patient with a suspected head injury has clear fluid leaking from the nose. The fluid creates a 'halo' sign on the gauze.",
+    q: "Which action avoids the 'Infection Trap' while prioritizing safety?",
+    o: ["Pack the nose tightly with sterile gauze to stop the leak", "Allow the fluid to drip onto a loose sterile pad and notify MD", "Suction the nasopharynx to clear the airway of fluid", "Document 'rhinorrhea' and reassess in 4 hours"],
+    a: 1, r: "Filter: Do not block CSF. Packing or suctioning (Unsafe) increases intracranial pressure and infection risk."
+},
+{
+    v: "A patient 4 hours post-thyroidectomy develops a frequent clearing of the throat and a 'tight' feeling in the neck.",
+    q: "What is the 'Airway Priority' action?",
+    o: ["Check the back of the neck for bleeding and call the surgeon", "Administer a PRN cough suppressant medication", "Explain that throat irritation is normal after intubation", "Document the findings and wait for morning rounds"],
+    a: 0, r: "Filter: Post-op bleeding. Neck tightness (Safety) indicates a hematoma compressing the airway."
+},
+{
+    v: "A nurse finds a patient's peripheral IV site is red, warm, and has a red streak moving up the arm.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Slow the IV rate and apply a cold compress", "Remove the IV catheter and restart at a new site", "Document 'phlebitis' and monitor every 4 hours", "Wait for the MD to see the streak before removing"],
+    a: 1, r: "Filter: Stop the trigger. Phlebitis (Safety) requires immediate removal to prevent thrombophlebitis."
+},
+{
+    v: "A patient with a history of seizures is having a tonic-clonic seizure in bed with the side rails down.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Place a padded tongue blade in the patient's mouth", "Turn the patient to the side and protect the head", "Restrain the patient's arms to prevent hitting the rails", "Document the start time and wait for it to end"],
+    a: 1, r: "Filter: Physical safety. Side-lying (Safety) prevents aspiration; mouth objects (Unsafe) cause injury."
+},
+{
+    v: "A nurse is preparing to hang a bag of TPN and notices the solution is cloudy with visible particles.",
+    q: "Which 'Medication Safety' filter must be applied?",
+    o: ["Shake the bag until the particles disappear", "Return the bag to the pharmacy and get a replacement", "Filter the solution using a standard IV filter", "Document the appearance and hang the bag anyway"],
+    a: 1, r: "Filter: Hold unsafe meds. Precipitation (Unsafe) can cause an embolism; never infuse cloudy TPN."
+},
+{
+    v: "A 2-year-old child is brought to the ER with a high fever, drooling, and sitting in a 'tripod' position.",
+    q: "To avoid a fatal 'Airway Trap', the nurse must NOT:",
+    o: ["Apply humidified oxygen via blow-by", "Examine the throat with a tongue depressor", "Keep the child on the parent's lap", "Prepare for emergency intubation"],
+    a: 1, r: "Filter: Do not trigger laryngospasm. Tongue depressors (Unsafe) in epiglottitis can cause total airway closure."
+},
+{
+    v: "A patient on Magnesium Sulfate for preeclampsia has a respiratory rate of 8 breaths/minute and absent DTRs.",
+    q: "Which 'First Safe Step' applies?",
+    o: ["Stop the Magnesium infusion and prepare Calcium Gluconate", "Document the 'bradypnea' and reassess in 15 minutes", "Increase the IV fluid rate to flush the medication", "Explain to the family that the patient is sleeping deeply"],
+    a: 0, r: "Filter: Antidote/Hold. Mg Toxicity (Safety) requires stopping the drug and giving the antagonist."
+},
+{
+    v: "A patient with a new cast on the leg reports extreme pain that is not relieved by Morphine.",
+    q: "Which 'Diagnosis Trap' must be avoided?",
+    o: ["Document 'drug-seeking behavior' and deny more meds", "Assess for Compartment Syndrome and notify the MD", "Wait for the cast to dry completely before reassessing", "Explain that pain is expected for the first 24 hours"],
+    a: 1, r: "Filter: Pain out of proportion. Unrelieved pain (Safety) is the first sign of Compartment Syndrome."
+},
+{
+    v: "During a blood transfusion, the patient develops lower back pain and hematuria.",
+    q: "What is the 'Action > Documentation' priority?",
+    o: ["Stop the transfusion and disconnect the tubing", "Slow the rate and monitor the vital signs", "Document the 'reaction' and call the blood bank", "Wait for the MD to confirm an allergic response"],
+    a: 0, r: "Filter: Stop the trigger. Hemolytic reaction (Safety) requires immediate cessation of the blood."
+},
+{
+    v: "A nurse is caring for a patient with a radioactive implant who starts to bleed from the surgical site.",
+    q: "Which 'Safety > Protocol' filter applies?",
+    o: ["Provide direct pressure to the wound with long forceps", "Pick up the radioactive source with bare hands to move it", "Document the 'hemorrhage' and stay at the bedside", "Wait for the radiation officer before touching the patient"],
+    a: 0, r: "Filter: Distance/Time. Use tools (Safety) to minimize radiation exposure while treating the bleed."
+},
+{
+    v: "A patient with a tracheostomy is found with the tube partially dislodged after a coughing fit.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Use a hemostat to keep the stoma open and call for help", "Document 'partial dislodgement' and wait for the RT", "Push the tube back in forcefully with a lubricant", "Explain the emergency to the patient to keep them calm"],
+    a: 0, r: "Filter: Maintain airway. Keeping the stoma open (Safety) prevents total airway loss."
+},
+{
+    v: "A nurse observes an elderly patient trying to climb over the side rails of the bed.",
+    q: "Which 'Safety > Restraint' filter is priority?",
+    o: ["Apply bilateral wrist restraints immediately", "Lower the rails and provide a bedside commode", "Document 'agitated behavior' and call security", "Wait for the family to arrive to sit with the patient"],
+    a: 1, r: "Filter: Least restrictive safe action. Climbing rails (Unsafe) leads to falls; lower the barrier (Safety)."
+},
+{
+    v: "A patient with a suspected MI is given Nitroglycerin sublingually. The BP drops from 130/80 to 90/60.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Document 'hypotension' and wait for the next dose", "Position the patient flat with legs elevated", "Wait for the ECG to show changes before acting", "Administer the second dose of Nitroglycerin"],
+    a: 1, r: "Filter: Position for perfusion. Elevating legs (Safety) helps BP; more Nitro (Unsafe) worsens it."
+},
+{
+    v: "A patient with a colonoscopy scheduled has been taking Aspirin daily for heart health.",
+    q: "Which 'Pre-op Safety' filter applies?",
+    o: ["Ensure the Aspirin was stopped 5-7 days prior to surgery", "Wait for the surgeon to see if the patient bleeds first", "Document 'Aspirin use' and proceed as planned", "Explain that Aspirin does not affect surgical bleeding"],
+    a: 0, r: "Filter: Prevent hemorrhage. Aspirin (Unsafe) increases bleeding risk; must be held (Safety)."
+},
+{
+    v: "A nurse finds a psychiatric patient has hidden a metal spoon and sharpened the handle into a point.",
+    q: "Which 'Safety > Politeness' filter applies?",
+    o: ["Ask the patient why they felt the need to make a weapon", "Confiscate the object immediately and initiate a room search", "Wait for the psychiatrist to discuss this in therapy", "Document 'potential for violence' in the shift report"],
+    a: 1, r: "Filter: Remove hazard immediately. Sharp objects (Unsafe) in a psych unit are an immediate threat."
+},
+{
+    v: "A patient with a central line develops sudden shortness of breath and a 'mill-wheel' heart murmur.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Place the patient in left-side Trendelenburg position", "Wait for a portable X-ray to confirm an air embolus", "Document 'murmur detected' and monitor O2 saturation", "Increase the IV rate to flush the air through"],
+    a: 0, r: "Filter: Air embolus protocol. Positioning (Safety) prevents air from blocking the heart's exit."
+},
+{
+    v: "A nurse is giving a medication that requires an apical pulse check. The pulse is 52 bpm.",
+    q: "Which 'Authority Trap' must be avoided?",
+    o: ["Give the medication and document 'pulse is low'", "Hold the medication and notify the physician", "Wait for the charge nurse to re-take the pulse", "Reassure the patient that a slow heart is healthy"],
+    a: 1, r: "Filter: Hold unsafe meds. Standard safety (Safety) for Digoxin/Beta-blockers is to hold if < 60."
+},
+{
+    v: "A neonate with jaundice is under phototherapy. The nurse finds the eye shields have slipped off.",
+    q: "Which 'Safety > Technology' filter applies?",
+    o: ["Replace the eye shields immediately and secure them", "Wait for the next feeding to fix the eye shields", "Document 'eyes exposed' and continue the therapy", "Turn off the lights and wait for the doctor's assessment"],
+    a: 0, r: "Filter: Prevent injury. Retinal damage (Unsafe) occurs quickly; replace protection (Safety) now."
+},
+{
+    v: "A patient with a chest tube has a sudden cessation of drainage and the 'tidaling' in the chamber stops.",
+    q: "Which 'Respiratory' filter avoids 'Reassessment Loops'?",
+    o: ["Check the tubing for kinks or dependent loops", "Wait for the MD to order a chest X-ray", "Document 'no tidaling' and reassess in 2 hours", "Milk the chest tube vigorously to restart flow"],
+    a: 0, r: "Filter: Simplest safe action. Checking for kinks (Safety) is priority; milking (Unsafe) is often restricted."
+},
+{
+    v: "A patient with a CVC line change develops a sudden cough and gasping during the procedure.",
+    q: "Which 'Action > Documentation' rule is priority?",
+    o: ["Clamp the catheter and turn the patient to the left side", "Document the 'respiratory distress' and call the RT", "Wait for the sterile dressing to be completed first", "Increase the oxygen to 10L via simple mask"],
+    a: 0, r: "Filter: First safe step. Clamping/Positioning (Safety) addresses the air embolus immediately."
+},
+{
+    v: "A patient with chronic COPD is receiving 6L of oxygen via nasal cannula and has a CO2 of 65.",
+    q: "Which 'Medication/Safety' filter applies?",
+    o: ["Reduce the oxygen to 2L to maintain the respiratory drive", "Wait for the patient to become drowsy before acting", "Document 'hypercapnia' and check the O2 saturation", "Increase the oxygen to 10L to improve the CO2 level"],
+    a: 0, r: "Filter: Oxygen toxicity. High O2 (Unsafe) in COPD can stop the breathing drive; reduce flow (Safety)."
+},
+{
+    v: "A nurse is about to administer blood but the patient's name on the bag has one letter different from the ID band.",
+    q: "Which 'Ethical/Safety' filter applies?",
+    o: ["Administer the blood since the medical record number matches", "Send the blood back to the lab and do not administer", "Wait for the supervisor to sign off on the discrepancy", "Document 'minor clerical error' and monitor for reaction"],
+    a: 1, r: "Filter: Absolute match. Any discrepancy (Unsafe) in blood labeling is a reason for rejection (Safety)."
+},
+{
+    v: "A patient with a pelvic fracture has not moved their legs for 24 hours and reports sudden chest pain.",
+    q: "Which 'Diagnosis Trap' should be anticipated?",
+    o: ["Document 'anxiety' and offer a distraction", "Assess for Pulmonary Embolism and apply oxygen", "Wait for the pain to subside before performing an ECG", "Explain that chest pain is common after trauma"],
+    a: 1, r: "Filter: High risk + Symptom = Act. Pelvic fractures (Safety) carry a very high risk of PE."
+},
+{
+    v: "A patient with an AV fistula for dialysis is found sleeping with their head resting on the fistula arm.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Gently move the patient's head and assess for a thrill", "Wait for the patient to wake up naturally", "Document 'improper positioning' in the chart", "Reassure the patient that the arm is strong enough"],
+    a: 0, r: "Filter: Protect the lifeline. Pressure (Unsafe) causes clotting; check patency (Safety) immediately."
+},
+{
+    v: "A nurse finds a medication vial in the fridge that expired yesterday.",
+    q: "Which 'Medication Safety' filter applies?",
+    o: ["Discard the vial and order a new one from pharmacy", "Use it anyway as medications are stable for 30 days more", "Wait for the pharmacist to decide if it's okay", "Document 'medication waste' and use half the dose"],
+    a: 0, r: "Filter: Hold unsafe meds. Expired drugs (Unsafe) are a hard stop (Safety)."
+},
+{
+    v: "A patient with a history of falls is trying to get out of bed to go to the bathroom alone.",
+    q: "Which 'Action > Explanation' priority applies?",
+    o: ["Assist the patient to the bathroom or use a commode", "Explain the hospital's fall policy while they stand up", "Wait for the physical therapist to provide a walker", "Document 'non-compliant with safety' in the report"],
+    a: 0, r: "Filter: Physical safety first. Assistive action (Safety) prevents the fall; documentation (Delay) does not."
+},
+{
+    v: "A patient 1-hour post-op from a carotid endarterectomy has a BP of 190/100.",
+    q: "Which 'Neurological' filter is the priority?",
+    o: ["Report the BP and prepare for IV antihypertensives", "Wait for the BP to stabilize as the anesthesia wears off", "Document 'hypertension' and reassess in 1 hour", "Explain the importance of stress reduction to the patient"],
+    a: 0, r: "Filter: Prevent catastrophe. Post-op hypertension (Safety) can cause a stroke or hematoma at the site."
+},
+{
+    v: "A nurse hears a 'hissing' sound coming from the oxygen flowmeter on the wall.",
+    q: "Which 'Safety > Technology' filter applies?",
+    o: ["Switch the patient to a portable tank and tag the wall unit", "Wait for the maintenance team to finish their rounds", "Document 'equipment failure' and stay with the patient", "Try to tighten the flowmeter with a wrench"],
+    a: 0, r: "Filter: Redundancy. Switch to a safe source (Safety) before dealing with the faulty one (Delay)."
+},
+{
+    v: "A patient with a systemic infection (Sepsis) has a blood pressure of 85/40 and a lactate of 5.0.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Start a rapid bolus of 30mL/kg Normal Saline", "Wait for the blood cultures to come back before giving fluids", "Document 'septic shock' and monitor hourly output", "Explain the risk of organ failure to the family"],
+    a: 0, r: "Filter: Fluid resuscitation. Early volume (Safety) is the gold standard for sepsis survival."
+},
+{
+    v: "A patient with a chest tube has 300mL of bright red drainage in the first hour post-insertion.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Notify the surgeon immediately of excessive drainage", "Wait and see if the drainage decreases in the second hour", "Document 'expected post-op bleeding' and check vitals", "Explain to the patient that the lung is clearing"],
+    a: 0, r: "Filter: Quantitative safety. Drainage > 100-200mL/hr (Safety) is a surgical emergency."
+},
+{
+    v: "A patient with a history of heart failure has gained 3kg of weight in 24 hours.",
+    q: "Which 'Fluid Balance' filter applies?",
+    o: ["Assess for lung crackles and notify the MD for diuretics", "Wait for the morning lab results for sodium", "Document 'weight gain' and reassess tomorrow", "Explain the fluid restriction diet to the patient"],
+    a: 0, r: "Filter: Early warning. Rapid weight gain (Safety) indicates fluid overload; act before distress."
+},
+{
+    v: "A patient with a PEG tube has a residual volume of 600mL before the next feeding.",
+    q: "Which 'GI Care' filter applies?",
+    o: ["Hold the feeding and notify the physician", "Wait for 30 minutes and give the feeding anyway", "Document 'high residual' and increase the feeding rate", "Explain that the stomach is full to the patient"],
+    a: 0, r: "Filter: Hold unsafe procedure. High residual (Safety) carries a massive risk of aspiration."
+},
+{
+    v: "A nurse finds a student nurse starting an IV on a patient without wearing gloves.",
+    q: "Which 'Ethical/Safety' filter applies?",
+    o: ["Stop the student and provide a pair of gloves immediately", "Wait until the procedure is over to teach the student", "Document 'OSHA violation' in the student's evaluation", "Reassure the student that the patient has 'clean' blood"],
+    a: 0, r: "Filter: Infection control. Stop the act (Safety) to prevent exposure for both parties."
+},
+{
+    v: "A patient with a deep vein thrombosis (DVT) starts to massage their calf because it 'hurts'.",
+    q: "What is the 'Action > Explanation' priority?",
+    o: ["Stop the patient from massaging the leg immediately", "Explain the risk of PE while they continue massaging", "Wait for the doctor to order a warm compress", "Document 'patient discomfort' in the chart"],
+    a: 0, r: "Filter: Prevent embolus. Massage (Unsafe) can dislodge the clot; stop immediately (Safety)."
+},
+{
+    v: "A patient with an unknown allergy is about to receive an IV contrast dye for a CT scan.",
+    q: "Which 'Medication Safety' filter is priority?",
+    o: ["Ask about allergies to shellfish or iodine specifically", "Wait for the CT tech to ask the questions", "Document 'allergy status unknown' and give the dye", "Explain that the dye might cause a warm feeling"],
+    a: 0, r: "Filter: Screening. Allergy check (Safety) must occur before injecting high-risk dyes (Unsafe)."
+},
+{
+    v: "A patient with a low platelet count (20,000) is brushing their teeth with a hard-bristle brush.",
+    q: "Which 'Safety > Protocol' filter applies?",
+    o: ["Provide a soft swab or soft brush and explain the risk", "Wait for the gums to bleed before intervening", "Document 'risk for bleeding' and watch the patient", "Force the patient to stop and take away the brush"],
+    a: 0, r: "Filter: Prevent hemorrhage. Hard bristles (Unsafe) cause bleeding in thrombocytopenia (Safety)."
+},
+{
+    v: "A nurse hears a patient yell 'Get out of here!' and the sound of a chair being thrown.",
+    q: "Which 'Safety before Protocol' filter applies?",
+    o: ["Call for help and do not enter the room alone", "Enter the room immediately to calm the patient", "Wait for the patient to stop yelling before calling", "Document 'agitation' and check the chart for meds"],
+    a: 0, r: "Filter: Staff/Patient safety. Violence (Unsafe) requires team support before intervention."
+},
+{
+    v: "A patient with a fever of 40C is shivering violently under three blankets.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Remove the blankets and provide cooling measures", "Wait for the blankets to warm the patient up", "Document 'rigors' and check the temperature again", "Explain that shivering is the body's way of fighting"],
+    a: 0, r: "Filter: Thermoregulation. Blankets (Unsafe) during a fever spike trap heat; cool the patient (Safety)."
+},
+{
+    v: "A patient on a heparin drip is scheduled for an urgent lumbar puncture.",
+    q: "Which 'Medication Safety' filter must be applied?",
+    o: ["Stop the heparin as per protocol before the procedure", "Wait for the neurologist to decide if it's safe", "Document 'heparin infusion' and proceed with the LP", "Increase the heparin dose to prevent clots during the LP"],
+    a: 0, r: "Filter: Hold unsafe meds. Heparin + LP (Unsafe) = spinal hematoma risk; must hold (Safety)."
+},
+{
+    v: "A nurse finds a toddler has swallowed an unknown quantity of a cleaning liquid.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Assess the airway and call Poison Control", "Induce vomiting with syrup of ipecac", "Wait for the parents to identify the liquid", "Document 'accidental ingestion' in the triage notes"],
+    a: 0, r: "Filter: Airway/Expert advice. Airway check (Safety) and Poison Control (Safety) are the priorities; inducing vomit (Unsafe) is often contraindicated."
+},
+    {
+    v: "A patient with a suspected head injury has clear fluid leaking from the nose. The fluid creates a 'halo' sign on the gauze.",
+    q: "Which action avoids the 'Infection Trap' while prioritizing safety?",
+    o: ["Pack the nose tightly with sterile gauze to stop the leak", "Allow the fluid to drip onto a loose sterile pad and notify MD", "Suction the nasopharynx to clear the airway of fluid", "Document 'rhinorrhea' and reassess in 4 hours"],
+    a: 1, r: "Filter: Do not block CSF. Packing or suctioning (Unsafe) increases intracranial pressure and infection risk."
+},
+{
+    v: "A patient 4 hours post-thyroidectomy develops a frequent clearing of the throat and a 'tight' feeling in the neck.",
+    q: "What is the 'Airway Priority' action?",
+    o: ["Check the back of the neck for bleeding and call the surgeon", "Administer a PRN cough suppressant medication", "Explain that throat irritation is normal after intubation", "Document the findings and wait for morning rounds"],
+    a: 0, r: "Filter: Post-op bleeding. Neck tightness (Safety) indicates a hematoma compressing the airway."
+},
+{
+    v: "A nurse finds a patient's peripheral IV site is red, warm, and has a red streak moving up the arm.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Slow the IV rate and apply a cold compress", "Remove the IV catheter and restart at a new site", "Document 'phlebitis' and monitor every 4 hours", "Wait for the MD to see the streak before removing"],
+    a: 1, r: "Filter: Stop the trigger. Phlebitis (Safety) requires immediate removal to prevent thrombophlebitis."
+},
+{
+    v: "A patient with a history of seizures is having a tonic-clonic seizure in bed with the side rails down.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Place a padded tongue blade in the patient's mouth", "Turn the patient to the side and protect the head", "Restrain the patient's arms to prevent hitting the rails", "Document the start time and wait for it to end"],
+    a: 1, r: "Filter: Physical safety. Side-lying (Safety) prevents aspiration; mouth objects (Unsafe) cause injury."
+},
+{
+    v: "A nurse is preparing to hang a bag of TPN and notices the solution is cloudy with visible particles.",
+    q: "Which 'Medication Safety' filter must be applied?",
+    o: ["Shake the bag until the particles disappear", "Return the bag to the pharmacy and get a replacement", "Filter the solution using a standard IV filter", "Document the appearance and hang the bag anyway"],
+    a: 1, r: "Filter: Hold unsafe meds. Precipitation (Unsafe) can cause an embolism; never infuse cloudy TPN."
+},
+{
+    v: "A 2-year-old child is brought to the ER with a high fever, drooling, and sitting in a 'tripod' position.",
+    q: "To avoid a fatal 'Airway Trap', the nurse must NOT:",
+    o: ["Apply humidified oxygen via blow-by", "Examine the throat with a tongue depressor", "Keep the child on the parent's lap", "Prepare for emergency intubation"],
+    a: 1, r: "Filter: Do not trigger laryngospasm. Tongue depressors (Unsafe) in epiglottitis can cause total airway closure."
+},
+{
+    v: "A patient on Magnesium Sulfate for preeclampsia has a respiratory rate of 8 breaths/minute and absent DTRs.",
+    q: "Which 'First Safe Step' applies?",
+    o: ["Stop the Magnesium infusion and prepare Calcium Gluconate", "Document the 'bradypnea' and reassess in 15 minutes", "Increase the IV fluid rate to flush the medication", "Explain to the family that the patient is sleeping deeply"],
+    a: 0, r: "Filter: Antidote/Hold. Mg Toxicity (Safety) requires stopping the drug and giving the antagonist."
+},
+{
+    v: "A patient with a new cast on the leg reports extreme pain that is not relieved by Morphine.",
+    q: "Which 'Diagnosis Trap' must be avoided?",
+    o: ["Document 'drug-seeking behavior' and deny more meds", "Assess for Compartment Syndrome and notify the MD", "Wait for the cast to dry completely before reassessing", "Explain that pain is expected for the first 24 hours"],
+    a: 1, r: "Filter: Pain out of proportion. Unrelieved pain (Safety) is the first sign of Compartment Syndrome."
+},
+{
+    v: "During a blood transfusion, the patient develops lower back pain and hematuria.",
+    q: "What is the 'Action > Documentation' priority?",
+    o: ["Stop the transfusion and disconnect the tubing", "Slow the rate and monitor the vital signs", "Document the 'reaction' and call the blood bank", "Wait for the MD to confirm an allergic response"],
+    a: 0, r: "Filter: Stop the trigger. Hemolytic reaction (Safety) requires immediate cessation of the blood."
+},
+{
+    v: "A nurse is caring for a patient with a radioactive implant who starts to bleed from the surgical site.",
+    q: "Which 'Safety > Protocol' filter applies?",
+    o: ["Provide direct pressure to the wound with long forceps", "Pick up the radioactive source with bare hands to move it", "Document the 'hemorrhage' and stay at the bedside", "Wait for the radiation officer before touching the patient"],
+    a: 0, r: "Filter: Distance/Time. Use tools (Safety) to minimize radiation exposure while treating the bleed."
+},
+{
+    v: "A patient with a tracheostomy is found with the tube partially dislodged after a coughing fit.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Use a hemostat to keep the stoma open and call for help", "Document 'partial dislodgement' and wait for the RT", "Push the tube back in forcefully with a lubricant", "Explain the emergency to the patient to keep them calm"],
+    a: 0, r: "Filter: Maintain airway. Keeping the stoma open (Safety) prevents total airway loss."
+},
+{
+    v: "A nurse observes an elderly patient trying to climb over the side rails of the bed.",
+    q: "Which 'Safety > Restraint' filter is priority?",
+    o: ["Apply bilateral wrist restraints immediately", "Lower the rails and provide a bedside commode", "Document 'agitated behavior' and call security", "Wait for the family to arrive to sit with the patient"],
+    a: 1, r: "Filter: Least restrictive safe action. Climbing rails (Unsafe) leads to falls; lower the barrier (Safety)."
+},
+{
+    v: "A patient with a suspected MI is given Nitroglycerin sublingually. The BP drops from 130/80 to 90/60.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Document 'hypotension' and wait for the next dose", "Position the patient flat with legs elevated", "Wait for the ECG to show changes before acting", "Administer the second dose of Nitroglycerin"],
+    a: 1, r: "Filter: Position for perfusion. Elevating legs (Safety) helps BP; more Nitro (Unsafe) worsens it."
+},
+{
+    v: "A patient with a colonoscopy scheduled has been taking Aspirin daily for heart health.",
+    q: "Which 'Pre-op Safety' filter applies?",
+    o: ["Ensure the Aspirin was stopped 5-7 days prior to surgery", "Wait for the surgeon to see if the patient bleeds first", "Document 'Aspirin use' and proceed as planned", "Explain that Aspirin does not affect surgical bleeding"],
+    a: 0, r: "Filter: Prevent hemorrhage. Aspirin (Unsafe) increases bleeding risk; must be held (Safety)."
+},
+{
+    v: "A nurse finds a psychiatric patient has hidden a metal spoon and sharpened the handle into a point.",
+    q: "Which 'Safety > Politeness' filter applies?",
+    o: ["Ask the patient why they felt the need to make a weapon", "Confiscate the object immediately and initiate a room search", "Wait for the psychiatrist to discuss this in therapy", "Document 'potential for violence' in the shift report"],
+    a: 1, r: "Filter: Remove hazard immediately. Sharp objects (Unsafe) in a psych unit are an immediate threat."
+},
+{
+    v: "A patient with a central line develops sudden shortness of breath and a 'mill-wheel' heart murmur.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Place the patient in left-side Trendelenburg position", "Wait for a portable X-ray to confirm an air embolus", "Document 'murmur detected' and monitor O2 saturation", "Increase the IV rate to flush the air through"],
+    a: 0, r: "Filter: Air embolus protocol. Positioning (Safety) prevents air from blocking the heart's exit."
+},
+{
+    v: "A nurse is giving a medication that requires an apical pulse check. The pulse is 52 bpm.",
+    q: "Which 'Authority Trap' must be avoided?",
+    o: ["Give the medication and document 'pulse is low'", "Hold the medication and notify the physician", "Wait for the charge nurse to re-take the pulse", "Reassure the patient that a slow heart is healthy"],
+    a: 1, r: "Filter: Hold unsafe meds. Standard safety (Safety) for Digoxin/Beta-blockers is to hold if < 60."
+},
+{
+    v: "A neonate with jaundice is under phototherapy. The nurse finds the eye shields have slipped off.",
+    q: "Which 'Safety > Technology' filter applies?",
+    o: ["Replace the eye shields immediately and secure them", "Wait for the next feeding to fix the eye shields", "Document 'eyes exposed' and continue the therapy", "Turn off the lights and wait for the doctor's assessment"],
+    a: 0, r: "Filter: Prevent injury. Retinal damage (Unsafe) occurs quickly; replace protection (Safety) now."
+},
+{
+    v: "A patient with a chest tube has a sudden cessation of drainage and the 'tidaling' in the chamber stops.",
+    q: "Which 'Respiratory' filter avoids 'Reassessment Loops'?",
+    o: ["Check the tubing for kinks or dependent loops", "Wait for the MD to order a chest X-ray", "Document 'no tidaling' and reassess in 2 hours", "Milk the chest tube vigorously to restart flow"],
+    a: 0, r: "Filter: Simplest safe action. Checking for kinks (Safety) is priority; milking (Unsafe) is often restricted."
+},
+{
+    v: "A patient with a CVC line change develops a sudden cough and gasping during the procedure.",
+    q: "Which 'Action > Documentation' rule is priority?",
+    o: ["Clamp the catheter and turn the patient to the left side", "Document the 'respiratory distress' and call the RT", "Wait for the sterile dressing to be completed first", "Increase the oxygen to 10L via simple mask"],
+    a: 0, r: "Filter: First safe step. Clamping/Positioning (Safety) addresses the air embolus immediately."
+},
+{
+    v: "A patient with chronic COPD is receiving 6L of oxygen via nasal cannula and has a CO2 of 65.",
+    q: "Which 'Medication/Safety' filter applies?",
+    o: ["Reduce the oxygen to 2L to maintain the respiratory drive", "Wait for the patient to become drowsy before acting", "Document 'hypercapnia' and check the O2 saturation", "Increase the oxygen to 10L to improve the CO2 level"],
+    a: 0, r: "Filter: Oxygen toxicity. High O2 (Unsafe) in COPD can stop the breathing drive; reduce flow (Safety)."
+},
+{
+    v: "A nurse is about to administer blood but the patient's name on the bag has one letter different from the ID band.",
+    q: "Which 'Ethical/Safety' filter applies?",
+    o: ["Administer the blood since the medical record number matches", "Send the blood back to the lab and do not administer", "Wait for the supervisor to sign off on the discrepancy", "Document 'minor clerical error' and monitor for reaction"],
+    a: 1, r: "Filter: Absolute match. Any discrepancy (Unsafe) in blood labeling is a reason for rejection (Safety)."
+},
+{
+    v: "A patient with a pelvic fracture has not moved their legs for 24 hours and reports sudden chest pain.",
+    q: "Which 'Diagnosis Trap' should be anticipated?",
+    o: ["Document 'anxiety' and offer a distraction", "Assess for Pulmonary Embolism and apply oxygen", "Wait for the pain to subside before performing an ECG", "Explain that chest pain is common after trauma"],
+    a: 1, r: "Filter: High risk + Symptom = Act. Pelvic fractures (Safety) carry a very high risk of PE."
+},
+{
+    v: "A patient with an AV fistula for dialysis is found sleeping with their head resting on the fistula arm.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Gently move the patient's head and assess for a thrill", "Wait for the patient to wake up naturally", "Document 'improper positioning' in the chart", "Reassure the patient that the arm is strong enough"],
+    a: 0, r: "Filter: Protect the lifeline. Pressure (Unsafe) causes clotting; check patency (Safety) immediately."
+},
+{
+    v: "A nurse finds a medication vial in the fridge that expired yesterday.",
+    q: "Which 'Medication Safety' filter applies?",
+    o: ["Discard the vial and order a new one from pharmacy", "Use it anyway as medications are stable for 30 days more", "Wait for the pharmacist to decide if it's okay", "Document 'medication waste' and use half the dose"],
+    a: 0, r: "Filter: Hold unsafe meds. Expired drugs (Unsafe) are a hard stop (Safety)."
+},
+{
+    v: "A patient with a history of falls is trying to get out of bed to go to the bathroom alone.",
+    q: "Which 'Action > Explanation' priority applies?",
+    o: ["Assist the patient to the bathroom or use a commode", "Explain the hospital's fall policy while they stand up", "Wait for the physical therapist to provide a walker", "Document 'non-compliant with safety' in the report"],
+    a: 0, r: "Filter: Physical safety first. Assistive action (Safety) prevents the fall; documentation (Delay) does not."
+},
+{
+    v: "A patient 1-hour post-op from a carotid endarterectomy has a BP of 190/100.",
+    q: "Which 'Neurological' filter is the priority?",
+    o: ["Report the BP and prepare for IV antihypertensives", "Wait for the BP to stabilize as the anesthesia wears off", "Document 'hypertension' and reassess in 1 hour", "Explain the importance of stress reduction to the patient"],
+    a: 0, r: "Filter: Prevent catastrophe. Post-op hypertension (Safety) can cause a stroke or hematoma at the site."
+},
+{
+    v: "A nurse hears a 'hissing' sound coming from the oxygen flowmeter on the wall.",
+    q: "Which 'Safety > Technology' filter applies?",
+    o: ["Switch the patient to a portable tank and tag the wall unit", "Wait for the maintenance team to finish their rounds", "Document 'equipment failure' and stay with the patient", "Try to tighten the flowmeter with a wrench"],
+    a: 0, r: "Filter: Redundancy. Switch to a safe source (Safety) before dealing with the faulty one (Delay)."
+},
+{
+    v: "A patient with a systemic infection (Sepsis) has a blood pressure of 85/40 and a lactate of 5.0.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Start a rapid bolus of 30mL/kg Normal Saline", "Wait for the blood cultures to come back before giving fluids", "Document 'septic shock' and monitor hourly output", "Explain the risk of organ failure to the family"],
+    a: 0, r: "Filter: Fluid resuscitation. Early volume (Safety) is the gold standard for sepsis survival."
+},
+{
+    v: "A patient with a chest tube has 300mL of bright red drainage in the first hour post-insertion.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Notify the surgeon immediately of excessive drainage", "Wait and see if the drainage decreases in the second hour", "Document 'expected post-op bleeding' and check vitals", "Explain to the patient that the lung is clearing"],
+    a: 0, r: "Filter: Quantitative safety. Drainage > 100-200mL/hr (Safety) is a surgical emergency."
+},
+{
+    v: "A patient with a history of heart failure has gained 3kg of weight in 24 hours.",
+    q: "Which 'Fluid Balance' filter applies?",
+    o: ["Assess for lung crackles and notify the MD for diuretics", "Wait for the morning lab results for sodium", "Document 'weight gain' and reassess tomorrow", "Explain the fluid restriction diet to the patient"],
+    a: 0, r: "Filter: Early warning. Rapid weight gain (Safety) indicates fluid overload; act before distress."
+},
+{
+    v: "A patient with a PEG tube has a residual volume of 600mL before the next feeding.",
+    q: "Which 'GI Care' filter applies?",
+    o: ["Hold the feeding and notify the physician", "Wait for 30 minutes and give the feeding anyway", "Document 'high residual' and increase the feeding rate", "Explain that the stomach is full to the patient"],
+    a: 0, r: "Filter: Hold unsafe procedure. High residual (Safety) carries a massive risk of aspiration."
+},
+{
+    v: "A nurse finds a student nurse starting an IV on a patient without wearing gloves.",
+    q: "Which 'Ethical/Safety' filter applies?",
+    o: ["Stop the student and provide a pair of gloves immediately", "Wait until the procedure is over to teach the student", "Document 'OSHA violation' in the student's evaluation", "Reassure the student that the patient has 'clean' blood"],
+    a: 0, r: "Filter: Infection control. Stop the act (Safety) to prevent exposure for both parties."
+},
+{
+    v: "A patient with a deep vein thrombosis (DVT) starts to massage their calf because it 'hurts'.",
+    q: "What is the 'Action > Explanation' priority?",
+    o: ["Stop the patient from massaging the leg immediately", "Explain the risk of PE while they continue massaging", "Wait for the doctor to order a warm compress", "Document 'patient discomfort' in the chart"],
+    a: 0, r: "Filter: Prevent embolus. Massage (Unsafe) can dislodge the clot; stop immediately (Safety)."
+},
+{
+    v: "A patient with an unknown allergy is about to receive an IV contrast dye for a CT scan.",
+    q: "Which 'Medication Safety' filter is priority?",
+    o: ["Ask about allergies to shellfish or iodine specifically", "Wait for the CT tech to ask the questions", "Document 'allergy status unknown' and give the dye", "Explain that the dye might cause a warm feeling"],
+    a: 0, r: "Filter: Screening. Allergy check (Safety) must occur before injecting high-risk dyes (Unsafe)."
+},
+{
+    v: "A patient with a low platelet count (20,000) is brushing their teeth with a hard-bristle brush.",
+    q: "Which 'Safety > Protocol' filter applies?",
+    o: ["Provide a soft swab or soft brush and explain the risk", "Wait for the gums to bleed before intervening", "Document 'risk for bleeding' and watch the patient", "Force the patient to stop and take away the brush"],
+    a: 0, r: "Filter: Prevent hemorrhage. Hard bristles (Unsafe) cause bleeding in thrombocytopenia (Safety)."
+},
+{
+    v: "A nurse hears a patient yell 'Get out of here!' and the sound of a chair being thrown.",
+    q: "Which 'Safety before Protocol' filter applies?",
+    o: ["Call for help and do not enter the room alone", "Enter the room immediately to calm the patient", "Wait for the patient to stop yelling before calling", "Document 'agitation' and check the chart for meds"],
+    a: 0, r: "Filter: Staff/Patient safety. Violence (Unsafe) requires team support before intervention."
+},
+{
+    v: "A patient with a fever of 40C is shivering violently under three blankets.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Remove the blankets and provide cooling measures", "Wait for the blankets to warm the patient up", "Document 'rigors' and check the temperature again", "Explain that shivering is the body's way of fighting"],
+    a: 0, r: "Filter: Thermoregulation. Blankets (Unsafe) during a fever spike trap heat; cool the patient (Safety)."
+},
+{
+    v: "A patient on a heparin drip is scheduled for an urgent lumbar puncture.",
+    q: "Which 'Medication Safety' filter must be applied?",
+    o: ["Stop the heparin as per protocol before the procedure", "Wait for the neurologist to decide if it's safe", "Document 'heparin infusion' and proceed with the LP", "Increase the heparin dose to prevent clots during the LP"],
+    a: 0, r: "Filter: Hold unsafe meds. Heparin + LP (Unsafe) = spinal hematoma risk; must hold (Safety)."
+},
+{
+    v: "A nurse finds a toddler has swallowed an unknown quantity of a cleaning liquid.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Assess the airway and call Poison Control", "Induce vomiting with syrup of ipecac", "Wait for the parents to identify the liquid", "Document 'accidental ingestion' in the triage notes"],
+    a: 0, r: "Filter: Airway/Expert advice. Airway check (Safety) and Poison Control (Safety) are the priorities; inducing vomit (Unsafe) is often contraindicated."
+},
+    {
+    v: "A patient with a high fever and productive cough is suspected of having tuberculosis (TB).",
+    q: "Which 'Infection Control' filter is the priority for the nurse?",
+    o: ["Place the patient in a negative-pressure room and use an N95 mask", "Wear a standard surgical mask and keep the door open", "Wait for the sputum culture results before isolating the patient", "Document 'cough' and place the patient in a semi-private room"],
+    a: 0, r: "Filter: Airborne precautions. Suspected TB (Safety) requires immediate isolation in a negative-pressure room."
+},
+{
+    v: "A nurse is caring for a patient with a chest tube. The nurse notes that the drainage system has tipped over on the floor.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Replace the entire drainage system with a new sterile unit", "Set the system upright and check the fluid levels", "Clamp the chest tube until a doctor arrives", "Document 'equipment accident' and reassess in 1 hour"],
+    a: 0, r: "Filter: Maintain seal. A tipped system (Unsafe) may lose its water seal; replacement (Safety) is required."
+},
+{
+    v: "A patient with a history of heart failure is scheduled for an IV bolus of 1000mL Normal Saline for dehydration.",
+    q: "Which 'Safety Trap' should the nurse anticipate?",
+    o: ["Fluid volume overload and pulmonary edema", "Dehydration and increased heart rate", "Acute renal failure from the saline", "Documenting the bolus and waiting for the MD"],
+    a: 0, r: "Filter: Comorbidity risk. Large boluses (Unsafe) in heart failure patients trigger fluid overload (Safety)."
+},
+{
+    v: "During an assessment, a patient with a femoral artery sheath post-angioplasty reports 'wetness' under their back.",
+    q: "Which 'Action > Documentation' rule is priority?",
+    o: ["Check the insertion site for bleeding and hematoma", "Change the bed linens to keep the patient dry", "Document 'diaphoresis' and reassess in 2 hours", "Explain that sweating is normal after the procedure"],
+    a: 0, r: "Filter: Hidden hemorrhage. 'Wetness' (Safety) often means blood tracking under the patient from the site."
+},
+{
+    v: "A patient with a major burn injury has a potassium level of 6.2 mEq/L.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Obtain an ECG and prepare for Kayexalate or Insulin/Dextrose", "Wait for the repeat lab results to confirm the level", "Document 'hyperkalemia' and encourage water intake", "Explain to the patient that electrolytes fluctuate after burns"],
+    a: 0, r: "Filter: Cardiac arrest risk. K+ > 6.0 (Unsafe) is a medical emergency requiring immediate intervention (Safety)."
+},
+{
+    v: "A nurse is preparing to suction a patient with a tracheostomy and notices the patient's heart rate drops from 80 to 50 bpm.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Stop suctioning and hyperoxygenate the patient", "Continue suctioning to clear the airway quickly", "Wait for the heart rate to recover before stopping", "Document 'bradycardia' during the procedure"],
+    a: 0, r: "Filter: Vagal stimulation. Suctioning can trigger the vagus nerve (Unsafe); stop and oxygenate (Safety)."
+},
+{
+    v: "A patient with a hip fracture is in Buck's traction. The nurse finds the weights are resting on the floor.",
+    q: "Which 'Action > Explanation' priority applies?",
+    o: ["Reposition the patient so the weights hang freely", "Lift the weights and place them on the bed to rest the leg", "Wait for the orthopedic surgeon to adjust the weights", "Document 'traction ineffective' in the nursing notes"],
+    a: 0, r: "Filter: Continuous tension. Weights on floor (Unsafe) mean no traction is being applied (Safety)."
+},
+{
+    v: "A patient who is NPO for surgery is found drinking a cup of coffee brought by a family member.",
+    q: "Which 'Pre-op Safety' filter applies?",
+    o: ["Notify the surgeon and anesthesiologist immediately", "Document 'family education provided' and proceed to surgery", "Wait to see if the patient develops nausea", "Explain that the surgery will be shorter if they stop now"],
+    a: 0, r: "Filter: Aspiration risk. Breaking NPO (Unsafe) is a reason to delay surgery for patient safety."
+},
+{
+    v: "A patient with a systemic infection is receiving Gentamicin. The nurse notes the urine output is 20mL over 2 hours.",
+    q: "Which 'Medication Safety' filter applies?",
+    o: ["Hold the next dose and notify the physician of possible toxicity", "Increase the IV fluid rate to 'flush' the kidneys", "Document 'low output' and give the medication on time", "Wait for the next shift to reassess the output"],
+    a: 0, r: "Filter: Nephrotoxicity. Gentamicin is toxic to kidneys; low output (Safety) is a stop sign."
+},
+{
+    v: "A nurse is about to administer an IM injection to a patient who says, 'I've never had that medicine before.'",
+    q: "What is the 'First Safe Step'?",
+    o: ["Re-verify the order and the patient's ID before proceeding", "Give the injection and monitor for a reaction", "Wait for the doctor to come and explain the drug", "Document 'patient hesitant' and skip the dose"],
+    a: 0, r: "Filter: Wrong medication trap. Patient's doubt (Safety) is a signal to double-check everything."
+},
+{
+    v: "A patient with an abdominal incision reports a 'popping' sensation after coughing, and the nurse sees a loop of bowel.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Cover the bowel with sterile saline-soaked gauze", "Try to gently push the bowel back into the abdomen", "Wait for the surgeon to arrive before touching the site", "Document 'evisceration' and keep the patient walking"],
+    a: 0, r: "Filter: Protect organs. Evisceration (Safety) requires keeping the tissue moist; never push it back (Unsafe)."
+},
+{
+    v: "A nurse finds a patient's pulse oximetry reading is 82% but the patient is talking normally and looks pink.",
+    q: "Which 'Action > Technology' filter applies?",
+    o: ["Check the probe placement and the patient's peripheral pulse", "Immediately call a Code Blue for respiratory arrest", "Document 'hypoxia' and start 10L of oxygen", "Wait for the RT to bring a new machine"],
+    a: 0, r: "Filter: Assess the patient, not the monitor. If the patient looks fine, check the equipment (Safety)."
+},
+{
+    v: "A patient on Warfarin has an INR of 5.5 and reports dark, tarry stools.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Hold the Warfarin and prepare Vitamin K", "Increase the Warfarin dose to treat the clot", "Wait for the next lab result in 24 hours", "Document 'melena' and monitor the diet"],
+    a: 0, r: "Filter: Antidote/Hold. High INR + Bleeding (Safety) requires stopping the drug and giving the antagonist."
+},
+{
+    v: "A nurse is assigned to a patient with a history of violent outbursts who is currently pacing the halls.",
+    q: "Which 'Staff Safety' filter applies?",
+    o: ["Maintain a clear exit path and do not block the patient's way", "Corner the patient and demand they go back to their room", "Wait for the patient to hit someone before calling for help", "Document 'pacing' and ignore the behavior"],
+    a: 0, r: "Filter: De-escalation. Never trap an agitated patient (Unsafe); always have an exit (Safety)."
+},
+{
+    v: "A patient with a suspected C-spine injury is being moved from the stretcher to the bed.",
+    q: "Which 'Action > Safety' priority applies?",
+    o: ["Use a log-roll technique with one person holding the head", "Have the patient slide over quickly to the bed", "Wait for the patient to move themselves to avoid pain", "Document 'transfer complete' after the patient sits up"],
+    a: 0, r: "Filter: Spinal stability. Log-rolling (Safety) prevents permanent paralysis (Unsafe)."
+},
+{
+    v: "A nurse is preparing to administer a tube feeding. The patient's gastric pH is 7.0.",
+    q: "Which 'Diagnosis Trap' should be avoided?",
+    o: ["Assume the tube is in the lungs and hold the feeding", "Assume the tube is in the stomach and start the feeding", "Wait for the patient to cough before deciding", "Document 'neutral pH' and check the tube length"],
+    a: 0, r: "Filter: Placement safety. pH 7.0 (Unsafe) suggests respiratory placement; stomach pH should be < 5."
+},
+{
+    v: "A patient with a newly applied arm cast reports tingling and a 'pins and needles' feeling.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Assess capillary refill and notify the MD of neurovascular changes", "Tell the patient to stop complaining and wait 24 hours", "Wait for the cast to dry to see if the tingling stops", "Document 'paresthesia' and give pain medication"],
+    a: 0, r: "Filter: Nerve/Blood flow. Tingling (Safety) is an early sign of cast-related constriction."
+},
+{
+    v: "A nurse is caring for a patient with a DNR (Do Not Resuscitate) order who stops breathing.",
+    q: "Which 'Ethical/Safety' filter applies?",
+    o: ["Provide comfort care and support the family", "Start CPR immediately because life is priority", "Wait for the doctor to change the order to 'Full Code'", "Document 'apnea' and call a Code Blue anyway"],
+    a: 0, r: "Filter: Respecting directives. DNR (Safety) means no CPR; focus on dignity and comfort (Safety)."
+},
+{
+    v: "A patient with diabetes is found sweaty, shaky, and confused before lunch.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Check the blood glucose and provide a fast-acting carb", "Give a dose of regular insulin to steady the patient", "Wait for the lunch tray to arrive in 20 minutes", "Document 'hypoglycemic episode' in the chart"],
+    a: 0, r: "Filter: Hypoglycemia. Low sugar (Unsafe) kills faster than high; treat immediately (Safety)."
+},
+{
+    v: "A nurse finds a patient with a PCA (Patient-Controlled Analgesia) pump is very drowsy with a RR of 6.",
+    q: "Which 'Action > Documentation' rule is priority?",
+    o: ["Stop the PCA pump and prepare to give Naloxone", "Document 'sedated' and wait for the pump to lock out", "Wait for the patient to wake up before assessing", "Explain the risks of Morphine to the patient's family"],
+    a: 0, r: "Filter: Opioid overdose. Respiratory depression (Safety) requires stopping the pump and giving the antidote."
+},
+{
+    v: "A patient with a urinary catheter has no output for 4 hours but reports feeling 'full'.",
+    q: "Which 'Respiratory/GI/GU' filter applies?",
+    o: ["Check the catheter tubing for kinks or obstruction", "Increase the IV fluid rate to produce more urine", "Wait for the next shift to bladder scan the patient", "Document 'urinary retention' and call for a new order"],
+    a: 0, r: "Filter: Simple fix first. Kinked tubing (Safety) is the most common cause of sudden retention."
+},
+{
+    v: "A nurse is about to give a liquid medication to an infant who is crying and gasping for air.",
+    q: "Which 'Safety Trap' must be avoided?",
+    o: ["Hold the medication until the infant is calm", "Squirt the medication into the back of the throat quickly", "Wait for the infant to fall asleep and give the dose", "Document 'non-compliant infant' and skip the dose"],
+    a: 0, r: "Filter: Aspiration risk. Crying/Gasping (Unsafe) while taking liquids leads to choking (Safety)."
+},
+{
+    v: "A patient with an allergy to penicillin is prescribed Amoxicillin.",
+    q: "Which 'Medication Safety' filter applies?",
+    o: ["Hold the medication and contact the prescribing MD", "Give the medication and watch for a rash", "Wait for the pharmacist to notice the error", "Document 'cross-sensitivity' and give half the dose"],
+    a: 0, r: "Filter: Prevent anaphylaxis. Amoxicillin is a penicillin (Unsafe); hold for safety (Safety)."
+},
+{
+    v: "A nurse finds a post-operative patient's surgical dressing is saturated with bright red blood.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Apply a pressure dressing over the existing one and call MD", "Remove the old dressing to see where the blood is coming from", "Wait for the doctor's scheduled rounds to report the bleed", "Document 'saturated dressing' and reassess in 4 hours"],
+    a: 0, r: "Filter: Control hemorrhage. Pressure (Safety) is the first action; never remove surgical dressings (Unsafe)."
+},
+{
+    v: "A patient with end-stage renal disease misses their dialysis and has tall T-waves on the monitor.",
+    q: "Which 'Diagnosis Trap' should be anticipated?",
+    o: ["Life-threatening Hyperkalemia", "Dehydration and low blood pressure", "Normal findings for a renal patient", "Anxiety and hyperventilation"],
+    a: 0, r: "Filter: Electrolyte crisis. Missed dialysis + Tall T-waves (Safety) = Potassium emergency."
+},
+{
+    v: "A nurse is caring for a patient in restraints. The nurse finds the patient's hand is cold and blue.",
+    q: "Which 'Action > Documentation' rule applies?",
+    o: ["Release the restraints immediately and assess circulation", "Loosen the restraints slightly and wait 1 hour", "Wait for the supervisor to witness the blue color", "Document 'poor perfusion' and monitor every 15 minutes"],
+    a: 0, r: "Filter: Prevent tissue death. Blue color (Unsafe) means the restraint is too tight (Safety)."
+},
+{
+    v: "A patient with a CVC line reports a 'crunching' sound in their ear during a saline flush.",
+    q: "Which 'Action > Safety' priority applies?",
+    o: ["Stop the flush and suspect catheter malposition", "Continue the flush as long as there is no pain", "Wait for the next nurse to verify the sound", "Document 'auditory sensation' and reassess tomorrow"],
+    a: 0, r: "Filter: Catheter safety. Ear sounds (Unsafe) indicate the line may be in the jugular vein (Safety)."
+},
+{
+    v: "A nurse finds a patient with a head injury is becoming increasingly irritable and has one dilated pupil.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Notify the MD and prepare for an emergency CT scan", "Wait and see if the pupil returns to normal size", "Document 'behavior change' and turn off the lights", "Explain to the patient that they need to rest more"],
+    a: 0, r: "Filter: Increased ICP. Pupil changes + Agitation (Safety) indicate brain herniation risk."
+},
+{
+    v: "A nurse is about to hang an IV bag but notices the label is for a different patient.",
+    q: "Which 'Medication Safety' filter applies?",
+    o: ["Return the bag to the pharmacy and get the correct one", "Use it anyway if the medication and dose are the same", "Wait for the other nurse to realize they have your bag", "Document 'pharmacy error' and use it to save time"],
+    a: 0, r: "Filter: Right patient. Administering a different patient's bag (Unsafe) is a major med error (Safety)."
+},
+{
+    v: "A patient with a pulmonary embolism is on a Heparin drip and has blood in their urine.",
+    q: "Which 'Stability First' action is priority?",
+    o: ["Stop the Heparin and prepare for Protamine Sulfate", "Increase the Heparin dose to treat the embolism", "Wait for the urine to clear before taking action", "Document 'hematuria' and reassess in 24 hours"],
+    a: 0, r: "Filter: Antidote/Hold. Bleeding on Heparin (Safety) requires stopping the drug immediately."
+},
+{
+    v: "A nurse finds a toddler has ingested several of their grandmother's heart pills (Digoxin).",
+    q: "What is the 'First Safe Step'?",
+    o: ["Check the toddler's heart rate and call Poison Control", "Wait for the toddler to vomit before acting", "Document 'accidental poisoning' and monitor the mood", "Give the toddler a large glass of milk to dilute the pill"],
+    a: 0, r: "Filter: Toxicology. Digoxin is highly toxic to children (Safety); get expert help now."
+},
+{
+    v: "A patient with a pacemaker is scheduled for an MRI of the brain.",
+    q: "Which 'Safety > Technology' filter applies?",
+    o: ["Cancel the MRI and notify the doctor of the pacemaker", "Proceed with the MRI but monitor the heart rate", "Wait for the MRI tech to see if it's okay", "Document 'pacemaker present' and start the scan"],
+    a: 0, r: "Filter: Equipment conflict. MRI magnets (Unsafe) can stop or damage a pacemaker (Safety)."
+},
+{
+    v: "A nurse finds a patient's TPN (Total Parenteral Nutrition) bag has run out, and the new bag is not ready.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Hang 10% Dextrose in water (D10W) at the same rate", "Stop the IV and wait for the TPN to arrive", "Document 'TPN delay' and monitor the patient's weight", "Flush the line with Normal Saline and wait 2 hours"],
+    a: 0, r: "Filter: Prevent hypoglycemia. Sudden TPN stop (Unsafe) causes a sugar crash; D10W (Safety) maintains levels."
+},
+{
+    v: "A patient with a central line develops a fever and chills during an IV infusion.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Stop the infusion and notify the MD for blood cultures", "Slow the rate and give an antipyretic (fever reducer)", "Wait for the fever to break before stopping the IV", "Document 'febrile reaction' and continue the med"],
+    a: 0, r: "Filter: Sepsis risk. Infusion-related fever (Safety) suggests a contaminated line or drug."
+},
+{
+    v: "A patient with a casted leg reports that the foot is cold to the touch and looks pale.",
+    q: "Which 'Action > Explanation' priority applies?",
+    o: ["Elevate the leg to heart level and notify the surgeon", "Explain that the cast is just cold from the air conditioning", "Wait for the patient's family to bring a warm blanket", "Document 'cool extremity' and reassess in 4 hours"],
+    a: 0, r: "Filter: Neurovascular status. Cold/Pale (Safety) indicates arterial blockage or compartment syndrome."
+},
+{
+    v: "A nurse is caring for a patient with a suicidal plan. The nurse finds the patient has a belt hidden in the bed.",
+    q: "Which 'Safety before Protocol' filter applies?",
+    o: ["Confiscate the belt immediately and start 1-to-1 observation", "Wait for the patient to try to use it before taking it", "Document 'suicidal ideation' and reassess at the next shift", "Explain the hospital rules about belts to the patient"],
+    a: 0, r: "Filter: Immediate threat. Proximity to a tool for self-harm (Unsafe) requires instant action (Safety)."
+},
+{
+    v: "A patient with a chest tube has a sudden 'gurgling' sound at the insertion site.",
+    q: "What is the 'First Safe Step'?",
+    o: ["Apply an occlusive petroleum gauze dressing to the site", "Push the tube further in to stop the air leak", "Wait for the doctor to suture the site tighter", "Document 'air leak' and monitor the oxygen saturation"],
+    a: 0, r: "Filter: Prevent pneumothorax. Gurgling (Unsafe) means air is entering the chest; seal it (Safety)."
+},
+{
+    v: "A nurse finds a patient is receiving the wrong IV fluid (D5W instead of Normal Saline).",
+    q: "Which 'Action > Documentation' rule is priority?",
+    o: ["Change to the correct fluid and report the incident", "Finish the bag of D5W then switch to Normal Saline", "Wait for the next bag to be delivered by the pharmacy", "Document 'fluid error' and wait for the doctor's visit"],
+    a: 0, r: "Filter: Correct the error. Stop the wrong fluid (Safety) and start the right one immediately."
+},
+{
+    v: "A patient with a history of asthma is given a dose of a Beta-Blocker for hypertension.",
+    q: "Which 'Safety Trap' should be anticipated?",
+    o: ["Bronchospasm and an asthma attack", "Increased heart rate and palpitations", "Normal therapeutic effect of the drug", "Documenting the blood pressure and waiting 4 hours"],
+    a: 0, r: "Filter: Drug-Disease interaction. Beta-Blockers (Unsafe) can cause life-threatening wheezing in asthmatics (Safety)."
+},
+{
+    v: "A nurse is about to discharge a patient who is still feeling dizzy and unstable.",
+    q: "Which 'Ethical/Safety' filter applies?",
+    o: ["Hold the discharge and reassess the patient's stability", "Complete the paperwork anyway as the doctor signed it", "Wait for the patient to fall before calling the doctor", "Document 'patient dizzy' and put them in a taxi"],
+    a: 0, r: "Filter: Discharge safety. Sending an unstable patient home (Unsafe) is negligence (Safety)."
+}
 ];
 function init() {
     const mount = document.getElementById('quiz-mount');
